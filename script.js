@@ -13,7 +13,7 @@ function getGif(evt) {
     fetch(searchURL)
         .then((response) => response.json())
         .then((gifs) => displayGifs(gifs.data));
-
+    form.searchTerm.value = "";
 }
 
 function displayGifs(mygifs) {

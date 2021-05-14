@@ -8,11 +8,6 @@
     margin: 5px 5px 5px 5px;
     
 }
-.outerBox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .center {
     padding: 5px;
     width : 30vw;
