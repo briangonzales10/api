@@ -12,9 +12,11 @@
     padding: 5px;
     width : 30vw;
     margin: auto;
+    display: flex;
+    justify-content: center;
     
 }
 .buttoncenter {
     padding: 5px;
-    margin-left: 110px;
+
 }
