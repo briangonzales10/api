@@ -1,0 +1,10 @@
+#gifcont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gifBox {
+    border-color: darkgrey;
+    margin: 5px 5px 5px 5px;
+    
+}
