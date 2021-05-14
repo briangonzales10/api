@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fun with APIs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body><div class="center">
     <form id="searchForm">
-    <input type="text" name="searchTerm" placeholder="Search">
-    <input type="submit" id="gifbutton" value="Search Gifs">
-</form>
+    <input type="text" class="form-control" name="searchTerm" placeholder="Search">
+    <div class="buttoncenter">
+    <input type="submit" class="btn btn-dark" id="gifbutton" value="Search Gifs">
+</form></div></div>
     <div id="gifcont"></div>
     <script src="./script.js"></script>
 </body>
