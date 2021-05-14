@@ -1,9 +1,16 @@
 
-document.getElementById("gifbutton").addEventListener("click", getGif)
+const form = document.getElementById("searchForm")
+form.addEventListener("submit", getGif)
 
-function getGif() {
-    const URL = "https://api.giphy.com/v1/gifs/search?api_key=DuM5deN971gS5WhyqEDc8RJNX4OdB1bJ&q=homer%20simpson";
-    fetch(URL)
+
+function getGif(evt) {
+    evt.preventDefault();
+    
+    const API = "https://api.giphy.com/v1/gifs/search?api_key=DuM5deN971gS5WhyqEDc8RJNX4OdB1bJ&q="
+    const searchTerm = form.searchTerm.value;
+    const searchURL = `${API}${searchTerm}`
+
+    fetch(searchURL)
         .then((response) => response.json())
         .then((gifs) => displayGifs(gifs.data));
 
